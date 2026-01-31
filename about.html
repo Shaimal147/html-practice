@@ -28,5 +28,30 @@
             <td>South Africa</td>
         </tr>
     </table>
+    <hr>
+
+    <form action="https://httpbin.org/get" method="get" target="_blank">
+        <fieldset>
+            <legend>Personal info</legend>
+            <p>
+                <label for="first-name">First name: </label>
+                <input type="text" name="first-name" id="first-name" placeholder="Jane" required>
+            </p>
+            <p>
+                <label for="last-name">Last name: </label>
+                <input type="text" name="last-name" id="last-name" placeholder="Doe" required>
+            </p>
+            <p>
+                <label for="number">Contact no: </label>
+                <input type="tel" name="number" id="number" placeholder="7000000" pattern="[7,9]{1}[0-9]{6}" required>
+            </p>
+            <p>
+                <label for="choice">Cupcake?</label>
+                <input type="checkbox" name="choice" id="choice">
+            </p>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
 </body>
 </html>
